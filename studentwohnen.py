@@ -7,7 +7,7 @@
 # <bitbar.desc>Display student apartments list</bitbar.desc>
 # <bitbar.dependencies>python</bitbar.dependencies>
 # <bitbar.version>1.10.1</bitbar.version>
-# <bitbar.abouturl></bitbar.abouturl>
+# <bitbar.abouturl>https://github.com/vkmb/studentwohnen/blob/main/studentwohnen.py</bitbar.abouturl>
 
 import os
 import pickle
@@ -113,18 +113,3 @@ index = [element.text for element in rows[0].findAll('th')]
 data = [[element.text.strip('\n').strip(',').strip(' ') for element in row.findAll('td')] for row in rows[1:]]
 
 update_db(index, data)
-
-
-# Ver 1
-# print("Waitlist | color=#ffffff ")
-# for i, room in enumerate(data):
-#     print(i+1,room[index.index("Position on the waiting list")] + ' 🚪 | color=#ffffff')
-# print("---")
-# for room in data:
-#     print(room[index.index("Residence hall")]+' 🏡  | color=#ff9100')
-#     if ',' in room[index.index("Rent")]:
-#         temp = [i.strip(' ') for i in  room[index.index("Rent")].split(',')]
-#         room[index.index("Rent")] = ' '.join(temp)
-#     print('-- ' + room[index.index("Rent")] + ' | color=#4caf50') #💶 
-#     print('-- ' + room[index.index("Number in this residence hall")] + ' 🚪 | color=#ef5350') 
-#     print('-- ' + room[index.index("Position on the waiting list")] + ' 🧘🏽‍♂️ | color=#123def')

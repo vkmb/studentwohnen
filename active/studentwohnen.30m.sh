@@ -6,7 +6,7 @@
 # <bitbar.desc>Display student apartments list</bitbar.desc>
 # <bitbar.dependencies>python3</bitbar.dependencies>
 # <bitbar.version>1.10.1</bitbar.version>
-# <bitbar.abouturl></bitbar.abouturl>
+# <bitbar.abouturl>https://github.com/vkmb/studentwohnen/blob/main/active/studentwohnen.30m.sh</bitbar.abouturl>
 
 source {replace_me}/.zshrc|.bashrc          #Source preset gloable variables
 python3 {replace_me}/studentwohnen.py       #Path to the downloaded studentwohnen.py file 
