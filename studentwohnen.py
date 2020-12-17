@@ -7,7 +7,7 @@
 # <bitbar.desc>Display student apartments list</bitbar.desc>
 # <bitbar.dependencies>python</bitbar.dependencies>
 # <bitbar.version>1.10.1</bitbar.version>
-# <bitbar.abouturl></bitbar.abouturl>
+# <bitbar.abouturl>https://github.com/vkmb/studentwohnen/blob/main/studentwohnen.py</bitbar.abouturl>
 
 import os
 import pickle
